@@ -23,7 +23,7 @@ def falsePosition(x0,x1,e):
         step = step + 1
         condition = abs(f(x2)) > e
 
-    print('\nLa raiz requrida es: %0.8f' % x2)
+    print('\nLa raiz requerida es: %0.8f' % x2)
 
 x = range (0,15)
 plt.plot(x, [f(i) for i in x])
