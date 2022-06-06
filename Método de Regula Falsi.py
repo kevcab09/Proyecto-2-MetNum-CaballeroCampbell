@@ -24,7 +24,7 @@ def falsePosition(x0,x1,e):
         condition = abs(f(x2)) > e
 
     print('\nLa raiz requerida es: %0.8f' % x2)
-
+#Grafica
 x = range (0,15)
 plt.plot(x, [f(i) for i in x])
 plt.title("Gráfica de la ecuación")

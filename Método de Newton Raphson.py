@@ -54,6 +54,7 @@ limite = int(input())
 #Encabezado
 print("{:^5} {:^15} {:^15} {:^15} {:^15} {:^15} ".format("Iteracion", "x0", "xsolucion", "Error", "f(x0)", "f'(x0)"))
 
+#Ciclo para las iteraciones
 for k in range(limite):
     x1=xi-fx(xi, t1, t2, t3, c1, c2, c3)/dfx(xi, et1, et2, et3, ec1, ec2, ec3)
     error=abs((x1-xi)/x1)
@@ -61,6 +62,8 @@ for k in range(limite):
     if error<err_q:
         break
     xi=x1
+    
+#Grafica final
 x = np.linspace(-20,20,100)
 plt.plot(x, fx(x, t1, t2, t3, c1, c2, c3))
 plt.plot(xi, fx(xi, t1, t2, t3, c1, c2, c3), 'or')
